@@ -138,11 +138,7 @@ qsub -q hotel -l nodes=1:ppn=4 -l walltime=6:00:00 /projects/ps-palmer/apurva/ge
 
 
 #compress images
-convert_locuszoom_to_png.sh
-#I converted LZ PDFs locally using pdftoppm. Found the following package that looks like a wrapper around pdftoppm. 
-#can be installed using conda
-#try https://anaconda.org/conda-forge/pdf2image
-
+bash convert_locuszoom_to_png.sh ./results/locuszoom_plots ./results/locuszoom_plots/locuszoom_pngs 
 
 #compress manhattan plots Done locally on my Desktop 
 compress_manhattan_plots.sh
