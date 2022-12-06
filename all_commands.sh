@@ -137,7 +137,7 @@ qsub -q hotel -l nodes=1:ppn=2 -l walltime=3:00:00 /projects/ps-palmer/apurva/ge
 qsub -q hotel -l nodes=1:ppn=4 -l walltime=6:00:00 /projects/ps-palmer/apurva/genetic_analysis/code/variant_annotation_snpeff.sh
 
 
-#compress images
+#compress images - this might be computationally intensive, I did it within an interactive job
 bash convert_locuszoom_to_png.sh ./results/locuszoom_plots ./results/locuszoom_plots/locuszoom_pngs 
 
 #compress manhattan plots Done locally on my Desktop 
