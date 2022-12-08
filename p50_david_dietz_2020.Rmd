@@ -227,7 +227,7 @@ cat("No Covariates were tested")
 # **SNP Heritability Estimates _h^2^_** 
 
 ```{r SNP heritability estimates, echo=FALSE,eval=TRUE,message=FALSE,include=T}
-heritability_summary=read.csv(paste0("results/heritability/snp_h2_with_N.csv"),header=T,stringsAsFactors = F)
+heritability_summary=read.csv(paste0("results/snp_h2_with_N.csv"),header=T,stringsAsFactors = F)
 heritability_summary$snp_heritability<-format(round(heritability_summary$snp_heritability,3),nsmall=3)
 heritability_summary$SE<-format(round(heritability_summary$SE,3),nsmall=3)
 #heritability_summary$Pval<-format(round(heritability_summary$Pval,3),nsmall=3)
